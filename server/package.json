@@ -1,0 +1,19 @@
+{
+  "name": "king-style",
+  "version": "1.0.0",
+  "description": "loja-roupa",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nemezys2K/proj_DH.git"
+  },
+  "author": "matheus-carvalho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nemezys2K/proj_DH/issues"
+  },
+  "homepage": "https://github.com/Nemezys2K/proj_DH#readme"
+}
