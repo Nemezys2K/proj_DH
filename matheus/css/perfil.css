@@ -88,20 +88,7 @@ nav ul form button img {
     background-color: #efb810;
     color: black;
 }
-/* div.acesso{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-div.acesso a{
-    font-size: 14pt;
-    color: #666;
-}
-div.acesso a:hover{
-    background-color: rgb(165, 165, 162);
-} */
+
 main.container{
     display: grid;
     grid-template-columns: 4fr 8fr;
@@ -253,3 +240,83 @@ footer div.map iframe {
     width: 700px;
     height: 200px;
 }
+.mobile-menu{
+    display: none;
+}
+.mobile-menu-icon{
+    display: none;
+}
+.main-mobile{
+    display: none;
+}
+
+@media(max-width:450px){
+    .serach-mobile{
+        width: 200px;
+        position: absolute;
+        left: 100px;
+    }
+    
+    /* menu hamburguer */
+    .nav{
+        padding: 1.5rem 4rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background: url(../img/testecor.jpg);
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button{
+        width: 100%;
+    }
+    .main-mobile, .section-mobile{
+        display: grid;
+        position: relative;
+        padding: 15px;
+        left: 5vw;
+        width: 300px;
+        height: 1000px;
+    }
+    .footer-mobile{
+        display: block;
+        position: absolute;
+        top: auto;
+        justify-content: center;
+        align-items: center;
+        width: 420px;
+        height: 100vh;
+    }
+    .map{
+        display: none;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 450px;
+        width: 350px;
+        height: 400px;
+    }
+}
+    
