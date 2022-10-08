@@ -242,6 +242,7 @@ footer div.map iframe {
 }
 
 /*Desabilitar o mobile*/
+/*Responsivo*/
 .mobile-menu,.mobile-menu-icon, .main-mobile
 ,.mobile-map,.mobile-imagperfil, .mobile-dados,
 section.mobile-divdados{
@@ -249,7 +250,7 @@ section.mobile-divdados{
 }
 
 
-
+/*Responsivo*/
 @media(max-width:450px){
     /*Menu de pesquisa*/
     .serach-mobile{
