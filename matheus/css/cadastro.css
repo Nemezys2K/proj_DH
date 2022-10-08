@@ -179,12 +179,12 @@ footer div.map iframe {
     width: 700px;
     height: 200px;
 }
-
+/*Responsivo*/
 .mobile-menu,.mobile-menu-icon, .main-mobile
 ,.mobile-map,.mobile-imagperfil{
     display: none;
 }
-
+/*Responsivo*/
 @media(max-width:450px){
     .serach-mobile{
         width: 200px;

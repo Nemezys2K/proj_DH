@@ -10,6 +10,6 @@ app.get('/',(req,res)=>{
 app.listen(5000,()=>{console.log("servidor rodando da porta")});
 
 //npm init
-//npm install nodemon -g
 //npm install express
+//npm install nodemon -g
 //npm i ejs

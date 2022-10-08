@@ -145,13 +145,13 @@ footer div.map iframe{
     height: 200px;
 }
 
-
+/*Responsivo*/
 .mobile-menu,.mobile-menu-icon, .main-mobile
 ,.mobile-map,.mobile-imagperfil{
     display: none;
 }
 
-
+/*Responsivo*/
 @media(max-width:450px){
     /*Menu de pesquisa*/
     .serach-mobile{
