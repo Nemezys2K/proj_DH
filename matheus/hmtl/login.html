@@ -32,9 +32,9 @@
                         <li class="nav-item"><a href="login.html">Login</a></li>
                     </ul>
                     <div class="mobile-menu-icon">
-                        <button><img class="icon" src="../img/menu_FILL0_wght400_GRAD0_opsz48.png" alt=""></button>
+                        <button type="button" onclick="menuShow()"><img class="icon" src="../img/menu_FILL0_wght400_GRAD0_opsz48.png" alt=""></button>
                     </div>
-                    <div class="mobile-menu">
+                    <div class="mobile-menu open">
                         <Menu>MENU</Menu>
                         <ul>
                             <form action="#" method="post">
@@ -100,12 +100,13 @@
 <script>
     function menuShow(){
         let menuMobile = document.querySelector('.mobile-menu');
+        console.log("MENU");
         if(menuMobile.classList.contains('open')){
             menuMobile.classList.remove('open');
-            document.querySelector('.icon').src = "assets/img/menu_FILL0_wght400_GRAD0_opsz48.svg";
+            document.querySelector('.icon').src = "../img/menu_FILL0_wght400_GRAD0_opsz48.svg";
         }else{
             menuMobile.classList.add('open');
-            document.querySelector('.icon').src = "assets/img/menu_FILL0_wght400_GRAD0_opsz48.svg";
+            document.querySelector('.icon').src = "../img/menu_FILL0_wght400_GRAD0_opsz48.svg";
         }
     }
 </script>

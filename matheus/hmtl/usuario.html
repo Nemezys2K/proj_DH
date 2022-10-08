@@ -28,9 +28,9 @@
                 <li class="nav-item"><a href="login.html">Login</a></li>
             </ul>
             <div class="mobile-menu-icon">
-                <button><img class="icon" src="../img/menu_FILL0_wght400_GRAD0_opsz48.png" alt=""></button>
+                <button type="button" onclick="menuShow()"><img class="icon" src="../img/menu_FILL0_wght400_GRAD0_opsz48.svg" alt=""></button>
             </div>
-            <div class="mobile-menu">
+            <div class="mobile-menu open">
                 <Menu>MENU</Menu>
                 <ul>
                     <form action="#" method="post">
@@ -47,11 +47,10 @@
     </nav>
 </header>
 
-
      <main class="container main-mobile">
         <section class="section-mobile">
-            <div id="nav-usuario">
-                <img src="../img/perfil.png" alt="foto-perfil">
+            <div id="nav-usuario mobile-usu">
+                <img class="mobile-imagperfil" src="../img/perfil.png" alt="foto-perfil">
                 <h2>Usuário</h2>
                 <hr>
                 <span>Nome Completo</span>
@@ -73,7 +72,7 @@
             </div>
         </section>
         <section>
-            <div id="dados">
+            <div id="dados" class="mobile-divdados">
                 <br>
                 <h3>Meus Dados e Pedidos</h3>
                 <hr>
@@ -104,36 +103,36 @@
                 <button type="submit" name="envio">Confirmar</button>
                 
             </div>
-        </section>
-      
+        </section> 
      </main>
-     <footer class="footer-mobile">
-        <ul>
-            <li><h3>Departamentos</h3></li>
-            <li>Camisas</li>
-            <li>Blusas</li>
-            <li>Shorts</li>
-            <li>Vestidos</li>
-            <li>Roupa intima</li>
-        </ul>
-        <ul>
-            <li><h3>Localização</h3></li>
-            <li>Rua João da Esquina nº 451, São Paulo - SP</li>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.9885846113393!2d-46.77459098502279!3d-23.532912984697013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ab7feb4519%3A0x739f0ddb0439cf94!2sDigital%20House%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1661405778616!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            
-        </ul>
-        <ul>
-            <li><h3>Assistencia</h3></li>
-            <li>Suporte Online</li>
-            <li>Chat de Atendimento 08:00 as 22:00 hrs</li>
-            <li>Contato com Atacado</li>
-            <li>Whatssap - (00)0000-0000</li>
-            <li>E-mail@ - king.styles@melhorpreco.com.br</li>
-        </ul>
-    </footer>
-    <!--Rodapé-->
+<!--Rodapé-->
+<footer class="footer-mobile">
+    <ul>
+        <li><h3>Departamentos</h3></li>
+        <li>Camisas</li>
+        <li>Blusas</li>
+        <li>Shorts</li>
+        <li>Vestidos</li>
+        <li>Roupa intima</li>
+    </ul>
+    <ul>
+        <li><h3>Localização</h3></li>
+        <li>Rua João da Esquina nº 451, São Paulo - SP</li>
+            <div class="map mobile-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.9885846113393!2d-46.77459098502279!3d-23.532912984697013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ab7feb4519%3A0x739f0ddb0439cf94!2sDigital%20House%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1664763460534!5m2!1spt-BR!2sbr" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        
+    </ul>
+    <ul>
+        <li><h3>Assistencia</h3></li>
+        <li>Suporte Online</li>
+        <li>Chat de Atendimento 08:00 as 22:00 hrs</li>
+        <li>Contato com Atacado</li>
+        <li>Whatssap - (00)0000-0000</li>
+        <li>E-mail@ - king.styles@melhorpreco.com.br</li>
+    </ul>
+</footer>
+<!--Rodapé-->
 
 <script>
     function menuShow(){

@@ -180,16 +180,10 @@ footer div.map iframe {
     height: 200px;
 }
 
-.mobile-menu{
+.mobile-menu,.mobile-menu-icon, .main-mobile
+,.mobile-map,.mobile-imagperfil{
     display: none;
 }
-.mobile-menu-icon{
-    display: none;
-}
-.main-mobile{
-    display: none;
-}
-
 
 @media(max-width:450px){
     .serach-mobile{

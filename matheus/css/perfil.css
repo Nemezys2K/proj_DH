@@ -64,7 +64,7 @@ nav ul li a:hover {
 
 .serach:hover {
     transition: 1000ms;
-    width: 500px;
+    width: 200px;
     height: 30px;
     border: 1px dashed #efb810;
 }
@@ -240,17 +240,18 @@ footer div.map iframe {
     width: 700px;
     height: 200px;
 }
-.mobile-menu{
-    display: none;
-}
-.mobile-menu-icon{
-    display: none;
-}
-.main-mobile{
+
+/*Desabilitar o mobile*/
+.mobile-menu,.mobile-menu-icon, .main-mobile
+,.mobile-map,.mobile-imagperfil, .mobile-dados,
+section.mobile-divdados{
     display: none;
 }
 
+
+
 @media(max-width:450px){
+    /*Menu de pesquisa*/
     .serach-mobile{
         width: 200px;
         position: absolute;
@@ -274,6 +275,7 @@ footer div.map iframe {
         background: url(../img/testecor.jpg);
         border: none;
         cursor: pointer;
+        float: right;
     }
     .mobile-menu ul{
         display: flex;
@@ -292,31 +294,49 @@ footer div.map iframe {
     .mobile-menu .login-button button{
         width: 100%;
     }
+
+    /*Conteuro de mobile containers*/
     .main-mobile, .section-mobile{
-        display: grid;
-        position: relative;
-        padding: 15px;
-        left: 5vw;
-        width: 300px;
+        display: block;
+        position: static;
+        width: 350px;
         height: 1000px;
     }
+    .mobile-usu{
+        display: block;
+        justify-content: start;
+        width: 400px;
+    }
+    .mobile-imagperfil img{
+        display: flex;
+        width: 200px;
+        height: 150px;
+    }
+    
+    section.mobile-divdados{
+        display: block;
+        width: 400px;
+        position: relative;
+        top: 800px;
+    }
+
+    /*Rodape do mobile*/
     .footer-mobile{
         display: block;
         position: absolute;
-        top: auto;
+        top: 2750px;
         justify-content: center;
         align-items: center;
         width: 420px;
         height: 100vh;
     }
-    .map{
-        display: none;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        top: 450px;
-        width: 350px;
-        height: 400px;
+    
+    .mobile-map iframe{
+        display: block;
+        width: 100px;
+    }
+
+    .open{
+        display: block;
     }
 }
-    

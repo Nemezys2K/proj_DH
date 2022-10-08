@@ -146,16 +146,14 @@ footer div.map iframe{
 }
 
 
-.mobile-menu{
+.mobile-menu,.mobile-menu-icon, .main-mobile
+,.mobile-map,.mobile-imagperfil{
     display: none;
 }
-.mobile-menu-icon{
-    display: none;
-}
-
 
 
 @media(max-width:450px){
+    /*Menu de pesquisa*/
     .serach-mobile{
         width: 200px;
         position: absolute;
@@ -179,6 +177,7 @@ footer div.map iframe{
         background: url(../img/testecor.jpg);
         border: none;
         cursor: pointer;
+        float: right;
     }
     .mobile-menu ul{
         display: flex;
@@ -197,14 +196,18 @@ footer div.map iframe{
     .mobile-menu .login-button button{
         width: 100%;
     }
+
+    /*Conteuro de mobile containers*/
     .main-mobile, .section-mobile{
-        display: grid;
-        position: relative;
-        padding: 15px;
-        left: 5vw;
-        width: 300px;
+        display: block;
+        position: static;
+        left: 1px;
+        width: 400px;
         height: 1000px;
     }
+
+
+    /*Rodape do mobile*/
     .footer-mobile{
         display: block;
         position: absolute;
@@ -214,14 +217,9 @@ footer div.map iframe{
         width: 420px;
         height: 100vh;
     }
-    .map{
-        
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        top: 450px;
-        width: 350px;
-        height: 400px;
+ 
+    .open{
+        display: block;
     }
 }
     
