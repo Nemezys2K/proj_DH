@@ -1,3 +1,4 @@
+@media(max-width:1950px){
 * {
     box-sizing: border-box;
 }
@@ -16,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     background-color: black;
 }
 
@@ -38,7 +39,6 @@ header img {
     margin: 10px;
 
 }
-
 nav ul li a {
     display: inline-block;
     padding: 30px;
@@ -64,7 +64,7 @@ nav ul li a:hover {
 
 .serach:hover {
     transition: 1000ms;
-    width: 200px;
+    width: 300px;
     height: 30px;
     border: 1px dashed #efb810;
 }
@@ -90,84 +90,58 @@ nav ul form button img {
 }
 
 main.container{
-    display: grid;
-    grid-template-columns: 4fr 8fr;
+    display: flex;
     margin: 0;
     padding: 0;
     height: 1200px;
     
 }
-#nav-usuario{
+.nav-usuario{
+    display: block;
     height: 1200px;
-    background-color: rgb(247, 247, 247);
+    background: url(../img/testecor.jpg);
     justify-content: center;
     align-items: center;
-    border-right:2px solid rgba(138, 138, 138, 0.2);
-}
-#nav-usuario img{
-    width: 300px;
-    height: 300px;
-    justify-content: center;
-    position: relative;
-    left: 105px;
-}
-
-#nav-usuario h2{
-    margin: 0;
-    padding: 5px;
     text-align: center;
+    width: 100vw;
 }
-#nav-usuario p{
-    padding: 15px;
-    text-align: justify;
-    justify-content: center;
-    font-size: 14pt;
+.nav-usuario ul li{
+    margin: 10px;
 }
-#nav-usuario ul li{
-    text-align: justify;
-    padding-top: 30px;
+.nav-usuario img{
+    margin-top: 50px;
 }
-#dados{
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(247, 247, 247);
-    height: 1200px;
-    border-right:2px solid rgba(138, 138, 138, 0.2);
-}
-#dados h3{
-    text-align: center;
-}
-#dados span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#dados img{
-    width: 150px;
-    height: 150px;
+.subirFoto{
+    display: block;
+    width: 250px;
+    height: 30px;
     position: relative;
     left: 42%;
 }
+
+
 section input[type=text]{
     display: flex;
     position: relative;
     margin-top: 10px;
     margin-bottom: 10px;
-    left: 27%;
+    left: 450px;
     width: 550px;
+    height: 30px;
 }
 section input[type=tel]{
     display: flex;
     position: relative;
-    left: 27%;
+    left: 450px;
     width: 550px;
     margin-top: 10px;
     margin-bottom: 10px;
+    height: 30px;
 }
 section input[type=date]{
     display: flex;
     position: relative;
-    left: 40%;
+    left: 610px;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 200px;
@@ -178,7 +152,8 @@ section input[type=date]{
 section button[type=submit]{
     display: flex;
     position: relative;
-    left: 35%;
+    left: 550px;
+    height: 45px;
     background-color: white;
     font-size: 12pt;
     margin: 10px;
@@ -209,18 +184,6 @@ section button[type=reset]:hover{
     color: #efb810;
 }
 
-
-article{
-    width: 400px;
-    height: 1200px;
-    background-color: rgb(247, 247, 247);
-}
-article p{
-    text-align: justify;
-    padding: 10px;
-    font-size: 13pt;
-}
-
 footer {
     width: 100%;
     height: 350px;
@@ -228,10 +191,11 @@ footer {
     grid-template-areas:
         "contatos categorias assistencia ";
     grid-auto-rows: 300px;
+    position: absolute;
     justify-content: space-evenly;
     align-items: center;
     background: #000000;
-    margin-top: 60px;
+   
     color: white;
     padding: 20px;
 }
@@ -243,11 +207,16 @@ footer div.map iframe {
 
 /*Desabilitar o mobile*/
 /*Responsivo*/
-.mobile-menu,.mobile-menu-icon, .main-mobile
-,.mobile-map,.mobile-imagperfil, .mobile-dados,
+.mobile-menu,
+.mobile-menu-icon,
+ .main-mobile
+,.mobile-map, 
+.mobile-dados,
+.botaoMobile,
 section.mobile-divdados{
     display: none;
 }
+
 
 
 /*Responsivo*/
@@ -297,21 +266,49 @@ section.mobile-divdados{
     }
 
     /*Conteuro de mobile containers*/
-    .main-mobile, .section-mobile{
+    .nav-usuario-mobile{
         display: block;
-        position: static;
-        width: 350px;
-        height: 1000px;
+        height: 1250px;
+        background: url(../img/testecor.jpg);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+        position: relative;
+        bottom: 20px;
     }
-    .mobile-usu{
+    .nav-usuario-mobile ul li{
         display: block;
-        justify-content: start;
-        width: 400px;
+        margin: 10px;
     }
-    .mobile-imagperfil img{
-        display: flex;
-        width: 200px;
-        height: 150px;
+    .nav-usuario-mobile img{
+        display: block;
+        margin-top: 20px;
+    }
+    .subirFoto-mobile{
+        display: block;
+        width: 210px;
+        height: 230px;
+        position: relative;
+        left: 27%;
+        margin-bottom: 20px;
+    }
+    .botaoMobile{
+        display: block;
+        position: relative;
+        left: 75px;
+        background-color: white;
+        font-size: 12pt;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 10px 10px 10px 10px;
+        justify-content: center;
+        width: 250px;
+    }
+    
+    .botaoMobile button[type=import]:hover{
+        background-color: black;
+        color: #efb810;
     }
     
     section.mobile-divdados{
@@ -320,18 +317,17 @@ section.mobile-divdados{
         position: relative;
         top: 800px;
     }
-
     /*Rodape do mobile*/
     .footer-mobile{
         display: block;
-        position: absolute;
-        top: 2750px;
+        position: relative;
+       
         justify-content: center;
         align-items: center;
         width: 420px;
         height: 100vh;
     }
-    
+
     .mobile-map iframe{
         display: block;
         width: 100px;
@@ -339,5 +335,6 @@ section.mobile-divdados{
 
     .open{
         display: block;
+    }
     }
 }

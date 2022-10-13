@@ -54,7 +54,7 @@ nav ul li a:hover {
 }
 .serach:hover{
     transition: 1000ms;
-    width: 250px;
+    width: 300px;
     height: 30px;
     border: 1px dashed #efb810;
 }
@@ -145,6 +145,7 @@ footer div.map iframe{
     height: 200px;
 }
 
+
 /*Responsivo*/
 .mobile-menu,.mobile-menu-icon, .main-mobile
 ,.mobile-map,.mobile-imagperfil{
@@ -198,28 +199,95 @@ footer div.map iframe{
     }
 
     /*Conteuro de mobile containers*/
-    .main-mobile, .section-mobile{
+    .main-mobile{
         display: block;
         position: static;
         left: 1px;
-        width: 400px;
+        width: 350px;
         height: 1000px;
+        position: relative;
+        left: 15px;
+    }
+    .section-mobile{
+        display: block;
+        position: fixed;
+        left: 1px;
+        width: 350px;
+        height: 1000px;
+        position: relative;
+        left: 15px;
     }
 
 
     /*Rodape do mobile*/
     .footer-mobile{
         display: block;
-        position: absolute;
-        top: 750px;
+        top: 650px;
         justify-content: center;
         align-items: center;
         width: 420px;
         height: 100vh;
     }
+    .mobile-sobre{
+        position: relative;
+        top: 225px;
+        width: 100vw;
+        height: 100px;
+        right: 20px;
+        margin: 0%;
+        background-color: #666;
+    }
+   
  
     .open{
         display: block;
+    }
+    section input[type=text]{
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        display: block;
+        width: 80%;
+        height: 40px;
+        margin-top: 5px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+    section input[type=passowrd]{
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        display: block;
+        width: 80%;
+        height: 40px;
+        margin-top: 5px;
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+    section button[type=submit]{
+        background-color:black;
+        color: #efb810;
+        font-size: 12pt;
+        margin: 0;
+        padding: 5px;
+        border-radius: 10px 10px 10px 10px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        display: block;
+        margin-left: 130px;
+        width: 100px;
+        height: 45px;
+    }
+  
+    span{
+        display: block;
+        font-size: 16pt;
+        margin: 20px;
+        text-align: center;
+    }
+    h2{
+        text-align: center;
     }
 }
     

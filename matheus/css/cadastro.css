@@ -18,6 +18,7 @@ header {
     align-items: center;
     margin-bottom: 20px;
     background-color: black;
+  
 }
 
 header img {
@@ -64,7 +65,7 @@ nav ul li a:hover {
 
 .serach:hover {
     transition: 1000ms;
-    width: 500px;
+    width: 300px;
     height: 30px;
     border: 1px dashed #efb810;
 }
@@ -93,12 +94,11 @@ nav ul form button img {
 main.container{
     display: flex;
     justify-content:center;
-    width: 950px;
-    height: 1070px;
+    width: 650px;
+    height: 970px;
     background:url('../img/testecor.jpg');
     position: relative;
-    left: 25%;
-    right: 20%;
+    left: 30%;
     border-radius: 30px 30px 30px 30px;
 }
 section form{
@@ -111,28 +111,29 @@ section form button{
 section form input{
     display: flex;
     justify-content: center;
-    width: 600px;
-    height: 25px;
+    width: 400px;
+    height: 35px;
 }
 section form select{
     display: flex;
     justify-content: start;
     width: 400px;
-    height: 25px;
+    height: 35px;
 }
 section form input[type=date]{
     width: 100px;
-    height: 25px;
+    height: 35px;
 }
 section form button[type=submit]{
     background-color: white;
-    font-size: 12pt;
+    font-size: 16pt;
     margin: 10px;
     padding: 5px;
     border-radius: 10px 10px 10px 10px;
     justify-content: center;
     align-items: center;
     width: 300px;
+    height: 55px;
 }
 section form button[type=submit]:hover{
     background-color:black;
@@ -152,13 +153,7 @@ section form button[type=reset]:hover{
     background-color: black;
     color: #efb810;
 }
-.pcd button[type="radio"]{
-    display: inline;
-    width: 5px;
-    height: 5px;
-    justify-content: start;
-    align-items: flex-start;
-}
+
 
 footer{
     width: 100%;
@@ -180,12 +175,13 @@ footer div.map iframe {
     height: 200px;
 }
 /*Responsivo*/
-.mobile-menu,.mobile-menu-icon, .main-mobile
-,.mobile-map,.mobile-imagperfil{
+.mobile-menu,.mobile-menu-icon
+,.mobile-map,.mobile-imagperfil,.mobile-sobre{
     display: none;
 }
 /*Responsivo*/
 @media(max-width:450px){
+    /*Menu de pesquisa*/
     .serach-mobile{
         width: 200px;
         position: absolute;
@@ -209,6 +205,7 @@ footer div.map iframe {
         background: url(../img/testecor.jpg);
         border: none;
         cursor: pointer;
+        float: right;
     }
     .mobile-menu ul{
         display: flex;
@@ -227,43 +224,128 @@ footer div.map iframe {
     .mobile-menu .login-button button{
         width: 100%;
     }
-    .main-mobile, .section-mobile{
+
+    /*Conteuro de mobile containers*/
+    main.main-mobile{
         display: block;
         position: relative;
-        padding: 15px;
-        right: 300px;
-        width: 300px;
+        left: 25px;
+        width: 350px;
+        height: 970px;
+        position: relative;
+       
+    }
+    .section-mobile{
+        display: block;
+        position: relative;
+        left: 1px;
+        width: 350px;
         height: 1000px;
+        left: 15px;
     }
-    .form-mobile{
-        display: flex;
-        width: 200px;
-        justify-content: center;
-        align-items: center;
-    }
-    main.container{
-        display: flex;
-        position: absolute;
-        left: 10px;
-        width: 400px;
-    }
+
+
+    /*Rodape do mobile*/
     .footer-mobile{
         display: block;
-        position: absolute;
-        top: 1400px;
+        top: 650px;
         justify-content: center;
         align-items: center;
         width: 420px;
         height: 100vh;
     }
-    .map{
-        
-        position: absolute;
+    .mobile-sobre{
+        position: relative;
+        top: 225px;
+        width: 100vw;
+        height: 100px;
+        right: 20px;
+        margin: 0%;
+        background-color: #666;
+    }
+ 
+    .open{
+        display: block;
+    }
+    section form{
+        display: grid;
+        grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr ;
+    }
+    section form button{
+        display: flex;
+    }
+    section form input{
+        display: flex;
+        justify-content: center;
+        width: 270px;
+        height: 35px;
+        margin-top: 5px;
+    }
+    section form select{
+        display: flex;
+        justify-content: start;
+        width: 270px;
+        height: 35px;
+    }
+    section form input[type=date]{
+        width: 270px;
+        height: 35px;
+    }
+    section form button[type=submit]{
+        background-color:black;
+        color: #efb810;
+        font-size: 12pt;
+        margin: 20px;
+        padding: 5px;
+        border-radius: 10px 10px 10px 10px;
         justify-content: center;
         align-items: center;
-        top: 450px;
-        width: 350px;
-        height: 400px;
+        position: relative;
+        left: 20px;
+        width: 250px;
+        height: 40px;
+
     }
-}
+  
     
+    section form button[type=reset]{
+        background-color: white;
+        font-size: 12pt;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 10px 10px 10px 10px;
+        justify-content: center;
+        width: 250px;
+    }
+    section form button[type=reset]:hover{
+        background-color: black;
+        color: #efb810;
+    }
+    .pcd button[type="radio"]{
+        display: inline;
+        width: 5px;
+        height: 5px;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    #comentario{
+        width: 270px;
+        height: 150px;
+    }
+    label{
+        position: relative;
+        left: 25px;
+        font-size: 16pt;
+    }
+    span{
+        display: block;
+        margin-top: 15px;
+        font-size: 16pt;
+        margin: 8px;
+    }
+    h2{
+        text-align: center;
+    }
+    
+}
+

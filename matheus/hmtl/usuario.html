@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/perfil.css">
+    <link rel="stylesheet" href="../css/usuario.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Work+Sans:wght@600&display=swap');
     </style>
     <title>Minha Conta</title>
 </head>
 <body>
-  <!--Cabecalho-->
-  <header>
+ <!--Cabecalho-->
+ <header>
     <img src="../img/Sem fundo.png" alt="">
     <nav>
         <ul>
@@ -28,7 +28,7 @@
                 <li class="nav-item"><a href="login.html">Login</a></li>
             </ul>
             <div class="mobile-menu-icon">
-                <button type="button" onclick="menuShow()"><img class="icon" src="../img/menu_FILL0_wght400_GRAD0_opsz48.svg" alt=""></button>
+                <button type="button" onclick="menuShow()"><img class="icon" src="../img/menu_FILL0_wght400_GRAD0_opsz48.png" alt=""></button>
             </div>
             <div class="mobile-menu open">
                 <Menu>MENU</Menu>
@@ -46,13 +46,16 @@
             </div>
     </nav>
 </header>
+<!--Cabecalho-->
 
      <main class="container main-mobile">
         <section class="section-mobile">
-            <div id="nav-usuario mobile-usu">
-                <img class="mobile-imagperfil" src="../img/perfil.png" alt="foto-perfil">
+            <div class="nav-usuario nav-usuario-mobile">
+                <img class="subirFoto-mobile" src="../img/perfil.png" alt="foto-perfil">
+                <button class="botaoMobile" type=" import">Escolha um arquivo PNG ou JPG</button>
                 <h2>Usuário</h2>
-                <hr>
+                <span>NICKNAME</span>
+                
                 <span>Nome Completo</span>
                 <ul>
                     <li>Telefone</li>
@@ -64,46 +67,13 @@
                     <li>Documento</li>
                     <span>00.000.000-1</span>
                 </ul>
-                <hr>
+                
                 <span>Oberservações</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus distinctio nostrum hic ullam cupiditate voluptates amet qui. Saepe aliquam at aspernatur perferendis voluptate, quod labore sapiente esse, similique itaque sunt!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eius cumque officiis veritatis excepturi exercitationem? Nulla esse debitis dolor, impedit possimus modi ipsam veritatis, nobis at optio dolorem aliquam tempora?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolorem hic! Tenetur accusamus dolor doloremque, cum nisi itaque asperiores mollitia ratione deleniti molestias non. </p>
-            </div>
-        </section>
-        <section>
-            <div id="dados" class="mobile-divdados">
-                <br>
-                <h3>Meus Dados e Pedidos</h3>
-                <hr>
-                <span>Pedidos</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam aut esse impedit dolorem non dignissimos labore officia nisi recusandae, eaque omnis? Cum reprehenderit quam exercitationem! Possimus nam dolorem porro expedita.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe facilis ab neque voluptas porro! Nulla, nesciunt modi, voluptatibus non, amet ullam dolore laudantium reprehenderit ea magni maxime! Inventore, suscipit velit.</p>
-                <hr>
-                <h3>Dados Atualizar</h3>
-                <span>Nome Completo</span>
-                <input type="text" name="nome">
-                <span>Telefone</span>
-                <input type="tel" name="telefone">
-                <span>Endereço</span>
-                <input type="text" name="endereco">
-                <span>E-mail</span>
-                <input type="text" name="email">
-                <span>Data de Nascimento</span>
-                <input type="date" name="data-nascimento">
-                <span>Documento</span>
-                <input type="text" name="documento">
-                <button type="submit" name="envio">Salvar</button>
-                <br>
-                <hr>
-                <h3>Carrinho</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, pariatur omnis quisquam dolore optio placeat obcaecati dolor quis animi excepturi ratione reiciendis impedit, harum maxime blanditiis debitis cupiditate. Veritatis, reiciendis?</p>
-                <a href=""><img src="../img/pedidos.png" alt="carrinho"></a>
-                <br>
-                <button type="submit" name="envio">Confirmar</button>
                 
             </div>
-        </section> 
+        </section>
+        
      </main>
 <!--Rodapé-->
 <footer class="footer-mobile">
@@ -118,8 +88,8 @@
     <ul>
         <li><h3>Localização</h3></li>
         <li>Rua João da Esquina nº 451, São Paulo - SP</li>
-            <div class="map mobile-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.9885846113393!2d-46.77459098502279!3d-23.532912984697013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ab7feb4519%3A0x739f0ddb0439cf94!2sDigital%20House%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1664763460534!5m2!1spt-BR!2sbr" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.9885846113393!2d-46.77459098502279!3d-23.532912984697013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ab7feb4519%3A0x739f0ddb0439cf94!2sDigital%20House%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1661405778616!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         
     </ul>
@@ -131,20 +101,23 @@
         <li>Whatssap - (00)0000-0000</li>
         <li>E-mail@ - king.styles@melhorpreco.com.br</li>
     </ul>
+    
 </footer>
 <!--Rodapé-->
 
 <script>
     function menuShow(){
         let menuMobile = document.querySelector('.mobile-menu');
+        console.log("MENU");
         if(menuMobile.classList.contains('open')){
             menuMobile.classList.remove('open');
-            document.querySelector('.icon').src = "assets/img/menu_FILL0_wght400_GRAD0_opsz48.svg";
+            document.querySelector('.icon').src = "../img/menu_FILL0_wght400_GRAD0_opsz48.svg";
         }else{
             menuMobile.classList.add('open');
-            document.querySelector('.icon').src = "assets/img/menu_FILL0_wght400_GRAD0_opsz48.svg";
+            document.querySelector('.icon').src = "../img/menu_FILL0_wght400_GRAD0_opsz48.svg";
         }
     }
 </script>
+
 </body>
 </html>
