@@ -6,8 +6,8 @@ const controler = require('../server/controllers/produtoController');
 app.get('/', (req,res)=>{
     res.send("Bem vindo a King-Style");
 });
-app.use('/home',rotasHomePage);
-app.use('/produtos', rotasProdutos);
+// app.use('/home',rotasHomePage);
+// app.use('/produtos', rotasProdutos);
 
 
 

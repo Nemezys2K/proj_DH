@@ -11,4 +11,4 @@ const controladorHome = {
 }
 
 
-module.exports = controlador;
+module.exports = controladorProduto;
