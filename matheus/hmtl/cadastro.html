@@ -12,56 +12,58 @@
     <title>Cadastro</title>
 </head>
 <body>
- <!--Cabecalho-->
- <header>
+    <div class="box-degrade">
+
+        <!--Cabecalho-->
+        <header>
     <img src="../img/Sem fundo.png" alt="">
     <nav>
         <ul>
             <form action="../js/routers/loginRouter.js" method="post">
-                    <input class="serach serach-mobile" type="text" id="search" name="search" placeholder="Buscar Produtos" required>
-                </form>
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">Todos os Produtos</a></li>
-                <li class="nav-item"><a href="#">Promoções</a></li>
-                <li class="nav-item"><a href="#">Coleções</a></li>
-                <li class="nav-item"><a href="#">Outlet</a></li>
-                <li class="nav-item"><a href="#">Carrinho</a></li>
-                <li class="nav-item"><a href="login.html">Login</a></li>
-            </ul>
-            <div class="mobile-menu-icon">
-                <button type="button" onclick="menuShow()"><img class="icon" src="../img/menu_FILL0_wght400_GRAD0_opsz48.svg" alt=""></button>
+                <input class="serach serach-mobile" type="text" id="search" name="search" placeholder="Buscar Produtos" required>
+            </form>
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">Todos os Produtos</a></li>
+            <li class="nav-item"><a href="#">Promoções</a></li>
+            <li class="nav-item"><a href="#">Coleções</a></li>
+            <li class="nav-item"><a href="#">Outlet</a></li>
+            <li class="nav-item"><a href="#">Carrinho</a></li>
+            <li class="nav-item"><a href="login.html">Login</a></li>
+        </ul>
+        <div class="mobile-menu-icon">
+            <button type="button" onclick="menuShow()"><img class="icon" src="../img/menu_FILL0_wght400_GRAD0_opsz48.svg" alt=""></button>
             </div>
             <div class="mobile-menu open">
                 <Menu>MENU</Menu>
                 <ul>
                     <form action="#" method="post">
-                        </form>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Todos os Produtos</a></li>
-                        <li><a href="#">Promoções</a></li>
-                        <li><a href="#">Coleções</a></li>
-                        <li><a href="#">Outlet</a></li>
-                        <li><a href="#">Carrinho</a></li>
-                        <li><a href="login.html">Login</a></li>
-                    </ul>
+                    </form>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Todos os Produtos</a></li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="#">Coleções</a></li>
+                    <li><a href="#">Outlet</a></li>
+                    <li><a href="#">Carrinho</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
             </div>
     </nav>
 </header>
 <!--Cabecalho-->
 
 
-    <main class="container main-mobile">
-        <article>
-            <!-- <img src="../img/banner2.jpg" alt=""> -->
-        </article>
-        <section class="section-mobile">
-            <form class="form-mobile" action="" method="get">
-                <h2>Cadastro</h2>
-                <label for="">Nome Completo:
-                    <input placeholder="Nome Completo.." type="text" name="nome">
-                </label>
-                <label for="">Documento RG/CPF/CPNJ:
-                    <input placeholder="Documento RG CPF CPNJ" type="text" name="documento">
+<main class="container main-mobile">
+    <article>
+        <!-- <img src="../img/banner2.jpg" alt=""> -->
+    </article>
+    <section class="section-mobile">
+        <form class="form-mobile" action="" method="get">
+            <h2>Cadastro</h2>
+            <label for="">Nome Completo:
+                <input placeholder="Nome Completo.." type="text" name="nome">
+            </label>
+            <label for="">Documento RG/CPF/CPNJ:
+                <input placeholder="Documento RG CPF CPNJ" type="text" name="documento">
                 </label>
                 <label for="">Data Nascimento:
                     <input type="date" name="data-nascimento">
@@ -83,9 +85,9 @@
                         <option value="11">Uruguai</option>
                         <option value="12">Venezuela</option>
                     </select>
-
+                    
                 </label>
-
+                
                 <label for="">Telefone ou Celular:
                     <input placeholder="(DDD) Número" type="telefone" name="whatssap">
                 </label>
@@ -121,9 +123,9 @@
         <ul>
             <li><h3>Localização</h3></li>
             <li>Rua João da Esquina nº 451, São Paulo - SP</li>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.9885846113393!2d-46.77459098502279!3d-23.532912984697013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ab7feb4519%3A0x739f0ddb0439cf94!2sDigital%20House%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1661405778616!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.9885846113393!2d-46.77459098502279!3d-23.532912984697013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ab7feb4519%3A0x739f0ddb0439cf94!2sDigital%20House%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1661405778616!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             
         </ul>
         <ul>
@@ -138,8 +140,9 @@
             @DigitalHouse
         </div>
     </footer>
+</div>
     <!--Rodapé-->
-
+    
     <script>
         function menuShow(){
             let menuMobile = document.querySelector('.mobile-menu');
@@ -152,7 +155,7 @@
                 document.querySelector('.icon').src = "../img/menu_FILL0_wght400_GRAD0_opsz48.svg";
             }
         }
-    </script>
+        </script>
 
 </body>
 </html>

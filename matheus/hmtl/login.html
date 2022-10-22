@@ -13,30 +13,32 @@
     <title>Login</title>
 </head>
 <body>
-    <!--Cabecalho-->
+    <div class="box-degrade">
+
+        <!--Cabecalho-->
         <header>
             <img src="../img/Sem fundo.png" alt="">
             <nav>
                 <ul>
                     <form action="#" method="post">
-                            <input class="serach serach-mobile" type="text" id="search" name="search" placeholder="Buscar Produtos" required>
-                        </form>
-                        <li class="nav-item"><a href="#">Home</a></li>
-                        <li class="nav-item"><a href="#">Todos os Produtos</a></li>
-                        <li class="nav-item"><a href="#">Promoções</a></li>
-                        <li class="nav-item"><a href="#">Coleções</a></li>
-                        <li class="nav-item"><a href="#">Outlet</a></li>
-                        <li class="nav-item"><a href="#">Carrinho</a></li>
-                        <li class="nav-item"><a href="login.html">Login</a></li>
-                    </ul>
-                    <div class="mobile-menu-icon">
-                        <button type="button" onclick="menuShow()"><img class="icon" src="../img/menu_FILL0_wght400_GRAD0_opsz48.png" alt=""></button>
-                    </div>
-                    <div class="mobile-menu open">
-                        <Menu>MENU</Menu>
+                        <input class="serach serach-mobile" type="text" id="search" name="search" placeholder="Buscar Produtos" required>
+                    </form>
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">Todos os Produtos</a></li>
+                    <li class="nav-item"><a href="#">Promoções</a></li>
+                    <li class="nav-item"><a href="#">Coleções</a></li>
+                    <li class="nav-item"><a href="#">Outlet</a></li>
+                    <li class="nav-item"><a href="#">Carrinho</a></li>
+                    <li class="nav-item"><a href="login.html">Login</a></li>
+                </ul>
+                <div class="mobile-menu-icon">
+                    <button type="button" onclick="menuShow()"><img class="icon" src="../img/menu_FILL0_wght400_GRAD0_opsz48.png" alt=""></button>
+                </div>
+                <div class="mobile-menu open">
+                    <Menu>MENU</Menu>
                         <ul>
                             <form action="#" method="post">
-                                </form>
+                            </form>
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Todos os Produtos</a></li>
                                 <li><a href="#">Promoções</a></li>
@@ -45,26 +47,26 @@
                                 <li><a href="#">Carrinho</a></li>
                                 <li><a href="login.html">Login</a></li>
                             </ul>
-                    </div>
-            </nav>
-        </header>
-  <!--Cabecalho-->
-    <main class="container main-mobile">
-        <section class="section-mobile">
-                <h2>Iniciar Sessão</h2>
-                <labale>
-                    <span>Usuário:</span>
-                    <input placeholder="Usuário ou E-mail" type="text" name="usuário" value="">
-                </labale>
-                <label for="">
-                    <span>Senha:</span>
-                    <input placeholder="Passowrd" type="passowrd" name="senha" id="senha">
-                </label>
-                <button type="submit" name="enviar" value="envio">
-                    Acessar
-                </button>
-                <span>Não possui uma conta?clique aqui <a href="">Cadastro</a></span>
-        </section>
+                        </div>
+                    </nav>
+                </header>
+                <!--Cabecalho-->
+                <main class="container main-mobile">
+                    <section class="section-mobile">
+                        <h2>Iniciar Sessão</h2>
+                        <labale>
+                            <span>Usuário:</span>
+                            <input placeholder="Usuário ou E-mail" type="text" name="usuário" value="">
+                        </labale>
+                        <label for="">
+                            <span>Senha:</span>
+                            <input placeholder="Passowrd" type="passowrd" name="senha" id="senha">
+                        </label>
+                        <button type="submit" name="enviar" value="envio">
+                            Acessar
+                        </button>
+                        <span>Não possui uma conta?clique aqui <a href="">Cadastro</a></span>
+                    </section>
     </main>
 <!--Rodapé-->
     <footer class="footer-mobile">
@@ -79,9 +81,9 @@
         <ul>
             <li><h3>Localização</h3></li>
             <li>Rua João da Esquina nº 451, São Paulo - SP</li>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.9885846113393!2d-46.77459098502279!3d-23.532912984697013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ab7feb4519%3A0x739f0ddb0439cf94!2sDigital%20House%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1661405778616!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.9885846113393!2d-46.77459098502279!3d-23.532912984697013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ab7feb4519%3A0x739f0ddb0439cf94!2sDigital%20House%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1661405778616!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             
         </ul>
         <ul>
@@ -94,9 +96,10 @@
         </ul>
         
     </footer>
+</div>
     <!--Rodapé-->
-
-<script>
+    
+    <script>
     function menuShow(){
         let menuMobile = document.querySelector('.mobile-menu');
         console.log("MENU");
@@ -109,7 +112,7 @@
         }
     }
 </script>
-    
+
 
 </body>
 </html>

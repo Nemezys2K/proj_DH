@@ -88,10 +88,12 @@ main.container{
 
 section{
     display: grid;
-    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    
     justify-content: center;
     align-items: center;
-    background: url(../img/testecor.jpg);
+    /* background: url(../img/testecor.jpg); */
+    /* background-image: linear-gradient(to left,#78740b,#c4c455,#d9d93a,#b0b01b,#d9d93a,#c4c455,#78740b); */
+    background-color: aliceblue;
     width: 800px;
     height: 500px;
     border-radius: 10px 10px 10px 10px;
@@ -126,6 +128,27 @@ section button[type=reset]:hover{
     background-color: black;
     color: #efb810;
 }
+
+/* Backgorund-animado */
+.box-degrade{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left,#FFD700,#585858,#DAA520,#000000);
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+}
+@keyframes degrade-animado {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x:100% ;
+    }
+}
+/* Backgorund-animado */
+
 footer{
     width: 100%;
     height: 350px;
